@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-plex-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-source-sans: 'Source Sans 3', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  body {
+    font-family: var(--font-plex-sans);
+    background-color: #1A2119;
+    color: #1F2A1E;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, .font-mono, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Theme Font Classes */
+.theme-font-warm {
+  font-family: var(--font-plex-sans);
+}
+
+.theme-font-earthy {
+  font-family: var(--font-source-sans);
+}
+
+.theme-font-modern {
+  font-family: var(--font-inter);
+}
+
+/* High-visibility focus states per theme */
+.focus-warm:focus-visible {
+  outline: 3px solid #FFB823;
+  outline-offset: 2px;
+}
+
+.input-focus-warm:focus {
+  outline: none;
+  border-color: #2D4F2B !important;
+  box-shadow: 0 0 0 3px #FFB823;
+}
+
+.focus-earthy:focus-visible {
+  outline: 3px solid #6E3511;
+  outline-offset: 2px;
+}
+
+.input-focus-earthy:focus {
+  outline: none;
+  border-color: #6E3511 !important;
+  box-shadow: 0 0 0 3px #91AC67;
+}
+
+.focus-modern:focus-visible {
+  outline: 3px solid #2D4F2B;
+  outline-offset: 2px;
+}
+
+.input-focus-modern:focus {
+  outline: none;
+  border-color: #2D4F2B !important;
+  box-shadow: 0 0 0 3px rgba(45, 79, 43, 0.25);
+}

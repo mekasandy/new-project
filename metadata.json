@@ -1,0 +1,6 @@
+{
+  "name": "FaunaTrack — Zoo Ops Login & Field Access",
+  "description": "Sistem manajemen satwa kebun binatang (ZOO OPS) dengan halaman login Desktop split-panel dan Mode Lapangan (Mobile) berkontras tinggi untuk keeper.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
